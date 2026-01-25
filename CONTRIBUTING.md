@@ -19,131 +19,121 @@ This project and everyone participating in it is governed by our [Code of Conduc
 
 ### 🐛 Reporting Bugs
 
-Before creating bug reports, please check existing issues to avoid duplicates. When you create a bug report, include as many details as possible:
+Before creating bug reports, please check existing issues to avoid duplicates. When creating a bug report, include:
 
-- **Use a clear and descriptive title**
-- **Describe the exact steps to reproduce the problem**
-- **Provide specific examples** (agent configurations, API calls, etc.)
-- **Describe the behavior you observed and what you expected**
-- **Include screenshots** if applicable
-- **Include your environment details** (Lyzr Studio version, browser, etc.)
+- **Clear title** describing the issue
+- **Steps to reproduce** the behavior
+- **Expected behavior** vs actual behavior
+- **Screenshots** if applicable
+- **Environment details** (Lyzr version, model used, etc.)
 
 ### 💡 Suggesting Enhancements
 
 Enhancement suggestions are welcome! Please include:
 
-- **Use a clear and descriptive title**
-- **Provide a detailed description** of the suggested enhancement
-- **Explain why this enhancement would be useful**
-- **List any alternative solutions** you've considered
+- **Use case** - Why is this enhancement needed?
+- **Proposed solution** - How should it work?
+- **Alternatives considered** - Other approaches you've thought about
 
-### 🔧 Contributing Code
+### 🔧 Pull Requests
 
-#### Types of contributions we're looking for:
-
-- New agent configurations for different use cases
-- Improvements to existing agent instructions
-- Documentation improvements
-- Bug fixes
-- New features
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## Getting Started
 
-1. **Fork the repository** on GitHub
+### Prerequisites
 
-2. **Clone your fork** locally:
+- [Lyzr Studio Account](https://studio.lyzr.ai/)
+- Basic understanding of AI agents and LLMs
+- Familiarity with JSON configuration
+
+### Local Development
+
+1. Clone your fork:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/lyzr-customer-support-agents.git
+   git clone https://github.com/YOUR_USERNAME/lyzr-customer-support-agents.git
    cd lyzr-customer-support-agents
    ```
 
-3. **Create a branch** for your changes:
+2. Create a branch for your changes:
    ```bash
    git checkout -b feature/your-feature-name
-   # or
-   git checkout -b fix/your-bug-fix
    ```
 
-4. **Make your changes** and test them in Lyzr Studio
+3. Make your changes and test them in Lyzr Studio
 
-5. **Commit your changes**:
+4. Commit with clear messages:
    ```bash
-   git add .
-   git commit -m "Add: brief description of your changes"
+   git commit -m "Add: description of what you added"
    ```
-
-6. **Push to your fork**:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-7. **Open a Pull Request** from your fork to the main repository
 
 ## Pull Request Process
 
-1. **Ensure your PR description clearly describes the problem and solution**
-2. **Include the relevant issue number** if applicable
-3. **Update documentation** if you're changing functionality
-4. **Ensure all agent JSON files are valid** and properly formatted
-5. **Remove any sensitive data** (API keys, personal information) before submitting
-6. **Wait for review** - maintainers will review your PR and may request changes
+1. **Update documentation** if you change agent configurations
+2. **Update the README.md** with details of changes if applicable
+3. **Ensure no sensitive data** (API keys, credentials) is committed
+4. **Follow the existing code style** and JSON formatting
+5. **Request review** from maintainers
 
-### PR Title Convention
+### PR Checklist
 
-Use these prefixes for PR titles:
-- `Add:` for new features or agents
-- `Fix:` for bug fixes
-- `Update:` for updates to existing functionality
-- `Docs:` for documentation changes
-- `Refactor:` for code refactoring
+- [ ] I have read the contributing guidelines
+- [ ] My code follows the project's style guidelines
+- [ ] I have updated documentation as needed
+- [ ] I have not committed any API keys or sensitive data
+- [ ] My changes don't break existing functionality
 
 ## Style Guidelines
 
-### Agent Configuration Files
+### JSON Formatting
 
-- Use **valid JSON** format with proper indentation (2 spaces)
-- **Sanitize all sensitive data** before committing:
-  - Replace API keys with `YOUR_LYZR_API_KEY_HERE`
-  - Replace RAG IDs with `YOUR_*_RAG_ID`
-  - Replace Agent IDs with `YOUR_*_AGENT_ID`
-- Include **clear descriptions** for agents
-- Write **comprehensive instructions** for agent behavior
-
-### Documentation
-
-- Use **clear, concise language**
-- Include **code examples** where helpful
-- Keep **formatting consistent** with existing docs
-- Update the **Table of Contents** if adding new sections
+- Use 2-space indentation
+- Keep keys in consistent order
+- Use descriptive names for agents and configurations
 
 ### Commit Messages
 
-- Use the present tense ("Add feature" not "Added feature")
-- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-- Limit the first line to 72 characters or less
-- Reference issues and pull requests liberally after the first line
+Use clear, descriptive commit messages:
+
+```
+Add: new feature description
+Fix: bug fix description
+Update: modification description
+Docs: documentation changes
+Refactor: code refactoring
+```
+
+### Agent Instructions
+
+When writing agent instructions:
+
+- Be clear and specific
+- Include examples where helpful
+- Define "must do" and "must not do" rules
+- Reference Knowledge Base usage explicitly
 
 ## Community
 
 ### Getting Help
 
-- **GitHub Issues** - For bugs and feature requests
-- **GitHub Discussions** - For questions and general discussion
-- **Lyzr Documentation** - [docs.lyzr.ai](https://docs.lyzr.ai/)
-- **Lyzr Community** - [Lyzr Discord/Slack]
+- **Issues**: Open a GitHub issue for bugs or feature requests
+- **Discussions**: Use GitHub Discussions for questions
+- **Email**: [kush.ankur0609@gmail.com](mailto:kush.ankur0609@gmail.com)
 
 ### Recognition
 
-Contributors will be recognized in the following ways:
-- Listed in the Contributors section of the README
-- Mentioned in release notes for significant contributions
+Contributors will be recognized in:
+- The project README
+- Release notes when their contributions are included
+
+## License
+
+By contributing, you agree that your contributions will be licensed under the [MIT License](LICENSE).
 
 ---
 
-## Thank You! 🙏
-
-Your contributions help make this project better for everyone. We appreciate your time and effort!
-
----
-
-*This contributing guide is adapted from open-source best practices and the [Contributor Covenant](https://www.contributor-covenant.org/).*
+Thank you for contributing! 🙏
