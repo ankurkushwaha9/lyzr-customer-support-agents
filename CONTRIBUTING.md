@@ -17,26 +17,27 @@ This project and everyone participating in it is governed by our [Code of Conduc
 
 ## How Can I Contribute?
 
-### Reporting Bugs
+### 🐛 Reporting Bugs
 
 Before creating bug reports, please check existing issues to avoid duplicates. When creating a bug report, include:
 
 - **Clear title** describing the issue
 - **Steps to reproduce** the behavior
-- **Expected behavior** vs actual behavior
-- **Screenshots** if applicable
-- **Environment details** (Lyzr Studio version, browser, etc.)
+- **Expected behavior** vs what actually happened
+- **Agent configuration** (without sensitive data like API keys)
+- **Lyzr Studio version** if applicable
+- **Screenshots** if relevant
 
-### Suggesting Enhancements
+### 💡 Suggesting Enhancements
 
-Enhancement suggestions are welcome! Please include:
+Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, include:
 
-- **Clear title** for the suggestion
-- **Detailed description** of the proposed feature
+- **Clear title** describing the suggestion
+- **Detailed description** of the proposed functionality
 - **Use case** explaining why this would be useful
 - **Examples** of how it would work
 
-### Contributing Code
+### 🔧 Contributing Code
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -45,108 +46,104 @@ Enhancement suggestions are welcome! Please include:
 5. Push to the branch (`git push origin feature/amazing-feature`)
 6. Open a Pull Request
 
+### 📝 Improving Documentation
+
+Documentation improvements are always welcome! This includes:
+
+- Fixing typos or unclear explanations
+- Adding examples
+- Improving setup guides
+- Translating documentation
+
 ## Getting Started
 
 ### Prerequisites
 
 - [Lyzr Studio Account](https://studio.lyzr.ai/)
-- Basic understanding of AI agents and JSON configuration
-- Git installed on your machine
+- Basic understanding of AI agents and LLMs
+- Familiarity with JSON configuration files
 
 ### Local Setup
 
-```bash
-# Clone your fork
-git clone https://github.com/YOUR_USERNAME/lyzr-customer-support-agents.git
+1. **Fork and clone the repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/lyzr-customer-support-agents.git
+   cd lyzr-customer-support-agents
+   ```
 
-# Navigate to directory
-cd lyzr-customer-support-agents
+2. **Create a branch for your changes:**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-# Add upstream remote
-git remote add upstream https://github.com/ankurkushwaha9/lyzr-customer-support-agents.git
-```
+3. **Make your changes and test them in Lyzr Studio**
+
+4. **Commit and push your changes**
 
 ## Pull Request Process
 
-1. **Update documentation** if you're changing functionality
-2. **Follow the style guidelines** below
-3. **Test your changes** in Lyzr Studio before submitting
-4. **Update the README.md** if needed
-5. **Request review** from maintainers
+1. **Ensure your PR description clearly describes:**
+   - The problem being solved
+   - The solution implemented
+   - Any breaking changes
 
-### PR Checklist
+2. **Update documentation** if your changes affect:
+   - Agent configurations
+   - Setup process
+   - API usage
 
-- [ ] My code follows the project's style guidelines
-- [ ] I have performed a self-review of my code
-- [ ] I have commented my code where necessary
-- [ ] I have updated the documentation accordingly
-- [ ] My changes generate no new warnings
-- [ ] I have tested my changes in Lyzr Studio
+3. **Remove sensitive data:**
+   - No API keys
+   - No personal credentials
+   - Use placeholder values like `YOUR_API_KEY_HERE`
+
+4. **Wait for review:**
+   - Maintainers will review your PR
+   - Address any requested changes
+   - Once approved, your PR will be merged
 
 ## Style Guidelines
 
 ### JSON Files
 
 - Use 2-space indentation
-- Keep agent instructions clear and well-organized
-- Use descriptive names for agents and tools
-- Always sanitize API keys before committing
+- Keep keys in consistent order
+- Use descriptive names
+- Include comments in documentation, not in JSON
 
 ### Documentation
 
 - Use clear, concise language
 - Include code examples where helpful
-- Keep README sections organized
-- Update table of contents when adding sections
+- Keep formatting consistent with existing docs
+- Use proper Markdown syntax
 
 ### Commit Messages
 
-Follow conventional commits:
+- Use present tense ("Add feature" not "Added feature")
+- Use imperative mood ("Move cursor to..." not "Moves cursor to...")
+- Keep first line under 72 characters
+- Reference issues and PRs when relevant
 
+**Good examples:**
 ```
-feat: add new agent capability
-fix: resolve KB lookup issue
-docs: update setup guide
-refactor: reorganize agent instructions
+Add escalation handling to Manager Agent
+Fix typo in setup guide
+Update README with new architecture diagram
 ```
 
-## Types of Contributions
+## Community
 
-### Agent Improvements
-
-- Enhanced agent instructions
-- Better error handling
-- New sub-agent capabilities
-- Improved orchestration logic
-
-### Documentation
-
-- Setup guides for different environments
-- Use case examples
-- Troubleshooting guides
-- Translation to other languages
-
-### Testing
-
-- Test cases for different scenarios
-- Edge case handling
-- Performance benchmarks
+- **Questions?** Open a GitHub Discussion
+- **Found a bug?** Open an Issue
+- **Have an idea?** Open an Issue or Discussion
+- **Want to contribute?** Check out open Issues labeled `good first issue`
 
 ## Recognition
 
 Contributors will be recognized in:
-
-- README.md contributors section
-- Release notes
-- Project documentation
-
-## Questions?
-
-Feel free to:
-
-- Open an issue for questions
-- Start a discussion in GitHub Discussions
-- Contact the maintainer directly
+- GitHub Contributors page
+- Release notes (for significant contributions)
 
 ---
 
