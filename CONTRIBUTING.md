@@ -9,141 +9,141 @@ First off, thank you for considering contributing to this project! 🎉
 - [Getting Started](#getting-started)
 - [Pull Request Process](#pull-request-process)
 - [Style Guidelines](#style-guidelines)
-- [Reporting Bugs](#reporting-bugs)
-- [Suggesting Enhancements](#suggesting-enhancements)
+- [Community](#community)
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project maintainers.
+This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [kush.ankur0609@gmail.com](mailto:kush.ankur0609@gmail.com).
 
 ## How Can I Contribute?
 
 ### 🐛 Reporting Bugs
 
-- Ensure the bug was not already reported by searching on GitHub under [Issues](https://github.com/ankurkushwaha9/lyzr-customer-support-agents/issues)
-- If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/ankurkushwaha9/lyzr-customer-support-agents/issues/new)
-- Include a clear title and description
-- Provide as much relevant information as possible
-- Include code samples or agent configurations if applicable
+Before creating bug reports, please check existing issues to avoid duplicates. When you create a bug report, include as many details as possible:
+
+- **Use a clear and descriptive title**
+- **Describe the exact steps to reproduce the problem**
+- **Provide specific examples** (agent configurations, API calls, etc.)
+- **Describe the behavior you observed and what you expected**
+- **Include screenshots** if applicable
+- **Include your environment details** (Lyzr Studio version, browser, etc.)
 
 ### 💡 Suggesting Enhancements
 
-- Open a new issue with the `enhancement` label
-- Provide a clear description of the proposed feature
-- Explain why this enhancement would be useful
-- Include examples of how the feature would work
+Enhancement suggestions are welcome! Please include:
 
-### 🔧 Pull Requests
+- **Use a clear and descriptive title**
+- **Provide a detailed description** of the suggested enhancement
+- **Explain why this enhancement would be useful**
+- **List any alternative solutions** you've considered
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+### 🔧 Contributing Code
+
+#### Types of contributions we're looking for:
+
+- New agent configurations for different use cases
+- Improvements to existing agent instructions
+- Documentation improvements
+- Bug fixes
+- New features
 
 ## Getting Started
 
-### Prerequisites
+1. **Fork the repository** on GitHub
 
-- [Lyzr Studio Account](https://studio.lyzr.ai/)
-- Basic understanding of AI agents and multi-agent systems
-- Familiarity with JSON configuration files
-
-### Local Setup
-
-1. Fork the repository
-2. Clone your fork:
+2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/lyzr-customer-support-agents.git
+   git clone https://github.com/YOUR-USERNAME/lyzr-customer-support-agents.git
    cd lyzr-customer-support-agents
    ```
-3. Create a new branch for your changes:
+
+3. **Create a branch** for your changes:
    ```bash
    git checkout -b feature/your-feature-name
+   # or
+   git checkout -b fix/your-bug-fix
    ```
+
+4. **Make your changes** and test them in Lyzr Studio
+
+5. **Commit your changes**:
+   ```bash
+   git add .
+   git commit -m "Add: brief description of your changes"
+   ```
+
+6. **Push to your fork**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+7. **Open a Pull Request** from your fork to the main repository
 
 ## Pull Request Process
 
-1. **Update Documentation**: If you're adding new agents or modifying existing ones, update the relevant documentation in the `docs/` folder and README.md.
+1. **Ensure your PR description clearly describes the problem and solution**
+2. **Include the relevant issue number** if applicable
+3. **Update documentation** if you're changing functionality
+4. **Ensure all agent JSON files are valid** and properly formatted
+5. **Remove any sensitive data** (API keys, personal information) before submitting
+6. **Wait for review** - maintainers will review your PR and may request changes
 
-2. **Follow JSON Standards**: Ensure all agent JSON files are properly formatted and validated.
+### PR Title Convention
 
-3. **Sanitize Credentials**: Never commit real API keys or sensitive data. Use placeholders like:
-   - `YOUR_LYZR_API_KEY_HERE`
-   - `YOUR_RAG_ID_HERE`
-   - `YOUR_AGENT_ID_HERE`
-
-4. **Test Your Changes**: If possible, test your agent configurations in Lyzr Studio before submitting.
-
-5. **Describe Your Changes**: Write a clear PR description explaining:
-   - What changes were made
-   - Why the changes were necessary
-   - How to test the changes
-
-6. **Link Related Issues**: Reference any related issues using `Fixes #123` or `Closes #123`.
+Use these prefixes for PR titles:
+- `Add:` for new features or agents
+- `Fix:` for bug fixes
+- `Update:` for updates to existing functionality
+- `Docs:` for documentation changes
+- `Refactor:` for code refactoring
 
 ## Style Guidelines
 
-### JSON Files
+### Agent Configuration Files
 
-- Use 2-space indentation
-- Keep agent instructions clear and well-organized
-- Use descriptive names for agents and fields
-- Include comments in documentation (not in JSON)
+- Use **valid JSON** format with proper indentation (2 spaces)
+- **Sanitize all sensitive data** before committing:
+  - Replace API keys with `YOUR_LYZR_API_KEY_HERE`
+  - Replace RAG IDs with `YOUR_*_RAG_ID`
+  - Replace Agent IDs with `YOUR_*_AGENT_ID`
+- Include **clear descriptions** for agents
+- Write **comprehensive instructions** for agent behavior
 
 ### Documentation
 
-- Use clear, concise language
-- Include code examples where helpful
-- Keep formatting consistent with existing docs
-- Use Markdown properly
+- Use **clear, concise language**
+- Include **code examples** where helpful
+- Keep **formatting consistent** with existing docs
+- Update the **Table of Contents** if adding new sections
 
 ### Commit Messages
 
-Follow conventional commit format:
-- `feat:` for new features
-- `fix:` for bug fixes
-- `docs:` for documentation changes
-- `refactor:` for code refactoring
-- `test:` for adding tests
+- Use the present tense ("Add feature" not "Added feature")
+- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+- Limit the first line to 72 characters or less
+- Reference issues and pull requests liberally after the first line
 
-Examples:
-```
-feat: Add new escalation agent for complex queries
-fix: Correct KB retrieval parameters in policy agent
-docs: Update setup guide with troubleshooting section
-```
+## Community
 
-## Reporting Bugs
+### Getting Help
 
-When reporting bugs, please include:
+- **GitHub Issues** - For bugs and feature requests
+- **GitHub Discussions** - For questions and general discussion
+- **Lyzr Documentation** - [docs.lyzr.ai](https://docs.lyzr.ai/)
+- **Lyzr Community** - [Lyzr Discord/Slack]
 
-1. **Description**: A clear and concise description of the bug
-2. **Steps to Reproduce**: 
-   - Step 1
-   - Step 2
-   - ...
-3. **Expected Behavior**: What you expected to happen
-4. **Actual Behavior**: What actually happened
-5. **Environment**:
-   - Lyzr Studio version (if known)
-   - Browser (if applicable)
-   - Any relevant configuration
-6. **Screenshots**: If applicable, add screenshots
+### Recognition
 
-## Suggesting Enhancements
-
-When suggesting enhancements, please include:
-
-1. **Use Case**: Describe the problem or use case
-2. **Proposed Solution**: How you envision the enhancement working
-3. **Alternatives Considered**: Any alternative solutions you've thought about
-4. **Additional Context**: Any other information that might be helpful
-
-## Questions?
-
-Feel free to open an issue with the `question` label if you have any questions about contributing.
+Contributors will be recognized in the following ways:
+- Listed in the Contributors section of the README
+- Mentioned in release notes for significant contributions
 
 ---
 
-Thank you for contributing! 🙏
+## Thank You! 🙏
+
+Your contributions help make this project better for everyone. We appreciate your time and effort!
+
+---
+
+*This contributing guide is adapted from open-source best practices and the [Contributor Covenant](https://www.contributor-covenant.org/).*
