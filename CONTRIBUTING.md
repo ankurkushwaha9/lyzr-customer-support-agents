@@ -1,6 +1,6 @@
 # Contributing to Lyzr Customer Support Agents
 
-First off, thank you for considering contributing to this project! 🎉
+First off, thank you for considering contributing! 🎉
 
 ## Table of Contents
 
@@ -13,36 +13,35 @@ First off, thank you for considering contributing to this project! 🎉
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [kush.ankur0609@gmail.com](mailto:kush.ankur0609@gmail.com).
+This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ## How Can I Contribute?
 
 ### 🐛 Reporting Bugs
 
-Before creating bug reports, please check existing issues to avoid duplicates. When creating a bug report, include:
+Before creating bug reports, please check existing issues. When creating a bug report, include:
 
 - **Clear title** describing the issue
 - **Steps to reproduce** the behavior
-- **Expected behavior** vs actual behavior
+- **Expected behavior** vs what actually happened
 - **Screenshots** if applicable
-- **Environment details** (Lyzr Studio version, browser, OS)
+- **Environment details** (Lyzr Studio version, browser, etc.)
 
 ### 💡 Suggesting Enhancements
 
 Enhancement suggestions are welcome! Please include:
 
-- **Clear title** for the suggestion
-- **Detailed description** of the proposed feature
-- **Use case** explaining why this would be useful
-- **Examples** of how it would work
+- **Use case** - Why is this enhancement needed?
+- **Proposed solution** - How should it work?
+- **Alternatives considered** - Other approaches you've thought about
 
-### 🔧 Contributing Code
+### 🔧 Pull Requests
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes
-4. Commit your changes (`git commit -m 'Add amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
+4. Commit with clear messages (`git commit -m 'Add amazing feature'`)
+5. Push to your branch (`git push origin feature/amazing-feature`)
 6. Open a Pull Request
 
 ## Getting Started
@@ -50,8 +49,8 @@ Enhancement suggestions are welcome! Please include:
 ### Prerequisites
 
 - [Lyzr Studio Account](https://studio.lyzr.ai/)
-- Basic understanding of AI agents and multi-agent systems
-- Familiarity with JSON configuration
+- Basic understanding of AI agents and JSON configuration
+- Familiarity with Git and GitHub
 
 ### Local Development
 
@@ -61,39 +60,39 @@ Enhancement suggestions are welcome! Please include:
    cd lyzr-customer-support-agents
    ```
 
-2. Create a branch for your changes:
+2. Create a branch:
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
-3. Make your changes and test them in Lyzr Studio
+3. Make changes and test in Lyzr Studio
 
 4. Commit and push your changes
 
 ## Pull Request Process
 
-1. **Update documentation** if you're changing agent configurations or adding features
-2. **Test your changes** in Lyzr Studio before submitting
-3. **Fill out the PR template** completely
-4. **Link related issues** using keywords like "Fixes #123"
-5. **Request review** from maintainers
-6. **Address feedback** promptly
+1. **Update documentation** if you change agent configurations
+2. **Update CHANGELOG.md** with your changes
+3. **Ensure no sensitive data** (API keys, credentials) is committed
+4. **Request review** from maintainers
+5. **Address feedback** promptly
 
 ### PR Checklist
 
 - [ ] I have read the contributing guidelines
 - [ ] My code follows the project's style guidelines
-- [ ] I have tested my changes in Lyzr Studio
-- [ ] I have updated documentation as needed
-- [ ] I have added comments for complex logic
-- [ ] All API keys and sensitive data are replaced with placeholders
+- [ ] I have updated the documentation accordingly
+- [ ] I have added/updated tests if applicable
+- [ ] All API keys and sensitive data are placeholder values
+- [ ] I have updated CHANGELOG.md
 
 ## Style Guidelines
 
 ### JSON Configuration Files
 
 - Use 2-space indentation
-- Keep descriptions clear and concise
+- Keep agent instructions well-formatted with clear sections
+- Use descriptive names for agents and fields
 - Always use placeholder values for sensitive data:
   - `"api_key": "YOUR_LYZR_API_KEY_HERE"`
   - `"rag_id": "YOUR_RAG_ID_HERE"`
@@ -102,55 +101,38 @@ Enhancement suggestions are welcome! Please include:
 
 - Use clear, concise language
 - Include code examples where helpful
-- Keep README sections organized
+- Keep README.md up to date with any changes
 - Use proper Markdown formatting
 
 ### Commit Messages
 
-Follow conventional commits format:
-
-```
-type(scope): description
-
-[optional body]
-
-[optional footer]
-```
-
-Types:
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation changes
-- `style`: Formatting changes
-- `refactor`: Code refactoring
-- `test`: Adding tests
-- `chore`: Maintenance tasks
+Follow conventional commits:
+- `feat:` New feature
+- `fix:` Bug fix
+- `docs:` Documentation only
+- `refactor:` Code refactoring
+- `test:` Adding tests
+- `chore:` Maintenance tasks
 
 Examples:
 ```
-feat(agents): add escalation handling to manager agent
-fix(docs): correct API endpoint in setup guide
-docs(readme): add architecture diagram
+feat: Add escalation handling to manager agent
+fix: Correct KB citation format in policy assistant
+docs: Update setup guide with troubleshooting section
 ```
 
 ## Community
 
-### Getting Help
+- **Questions?** Open a [Discussion](https://github.com/ankurkushwaha9/lyzr-customer-support-agents/discussions)
+- **Found a bug?** Open an [Issue](https://github.com/ankurkushwaha9/lyzr-customer-support-agents/issues)
+- **Want to contribute?** Submit a [Pull Request](https://github.com/ankurkushwaha9/lyzr-customer-support-agents/pulls)
 
-- **GitHub Issues**: For bugs and feature requests
-- **Discussions**: For questions and general discussion
-- **Lyzr Discord**: Join the [Lyzr community](https://discord.gg/lyzr)
-
-### Recognition
+## Recognition
 
 Contributors will be recognized in:
 - README.md contributors section
-- Release notes for significant contributions
-
-## License
-
-By contributing, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+- Release notes when their changes are included
 
 ---
 
-Thank you for contributing! 🚀
+Thank you for helping make this project better! 🙏
