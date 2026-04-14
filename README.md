@@ -1,6 +1,6 @@
-# Lyzr Customer Support Multi-Agent System
+# Multi-Agent Orchestration System — Production Customer Support Pipeline
 
-A production-ready multi-agent customer support system built with [Lyzr Agent Studio](https://studio.lyzr.ai/). This system uses a Manager Agent to orchestrate three specialized sub-agents for handling product inquiries, refund policies, and refund status tracking.
+A production-ready multi-agent orchestration system built with [Lyzr Agent Studio](https://studio.lyzr.ai/). A Manager Agent routes and orchestrates three specialized sub-agents for product inquiries, refund policies, and refund status tracking. Deployable via REST API.
 
 ## 🏗️ Architecture Overview
 
